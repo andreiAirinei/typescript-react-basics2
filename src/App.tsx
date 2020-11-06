@@ -14,6 +14,13 @@ const App: React.FC = () => {
         handleChange={e => { e.preventDefault() }}
       />
       <ReducerExample />
+
+      {/* Render props 
+          A component with a render prop takes a function that returns a React element and calls it instead of implementing its own render logic.
+
+          @props - could have been passed in a 'data' object {}
+      */}
+
       <Counter>
         {(count, setCount) => (
           <div>
